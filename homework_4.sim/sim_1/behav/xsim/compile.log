@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/homework_4/homework_4.srcs/sources_1/new/VGA_diaplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_diaplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/homework_4/homework_4.srcs/sim_1/new/VGA_display_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VGA_display_tb

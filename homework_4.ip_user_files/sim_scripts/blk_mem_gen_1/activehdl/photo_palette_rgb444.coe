@@ -1,0 +1,3 @@
+memory_initialization_radix=16;
+memory_initialization_vector=
+FDB, DBB, BAB, AAC, A9A, 99B, 99B, 89B, 989, 78A, 678, 455, 344, 323, 122, 011;
