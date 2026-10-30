@@ -25,17 +25,15 @@ module VGA_diaplay(     //640x480@60Hz
     //input [11:0] RGB_in,
     output hsync,
     output vsync,
-    output reg [11:0] disp_RGB
+    output [11:0] disp_RGB
     );
 
     reg clk_count;
     reg vga_clk;
     wire hcount_ov,vcount_ov;
     reg [9:0] hcount,vcount;
-    reg [18:0] pixel_x,pixel_y;
-    wire [18:0] pic_addr;
-    wire [11:0] valid_RGB;
-    wire [3:0] color_index;
+    wire [11:0] back_RGB;
+    
 
 
     localparam hsync_end = 10'd95,
@@ -76,40 +74,26 @@ module VGA_diaplay(     //640x480@60Hz
     assign hsync = (hcount > hsync_end);
     assign vsync = (vcount > vsync_end);
 
-    //图片地址计算
-    always @(*) begin
-        if((hcount > hdat_begin-2)&&(hcount <= hdat_end-2)&&(vcount >vdat_begin)&&(vcount <= vdat_end)) begin
-            pixel_x = hcount - hdat_begin - 1;
-            pixel_y = vcount - vdat_begin - 1;
-        end else begin
-            pixel_x = 19'd0;
-            pixel_y = 19'd0;
-        end
-    end
-    assign pic_addr = pixel_y * 640 + pixel_x;
 
-    //图片ROM
-    blk_mem_gen_0 image_rom (
-        .clka(vga_clk),    // input wire clka
-        .ena(1'b1),      // input wire ena
-        .addra(pic_addr),  // input wire [18 : 0] addra
-        .douta(color_index)  // output wire [3 : 0] douta
+    //移动坐标
+    wire [9:0] blk_x,blk_y;
+    block_move move (
+        .clk(clk),
+        .vsync(vsync),
+        .blk_x(blk_x),
+        .blk_y(blk_y)
     );
 
-    //颜色索引
-    blk_mem_gen_1 image_color_rom (
-        .clka(vga_clk),    // input wire clka
-        .ena(1'b1),      // input wire ena
-        .addra(color_index),  // input wire [3 : 0] addra
-        .douta(valid_RGB)  // output wire [11 : 0] douta
-    );
 
-    //无效区与有效区信号选择
-    always @(*) begin
-        if((hcount > hdat_begin)&&(hcount <= hdat_end)&&(vcount >vdat_begin)&&(vcount <= vdat_end)) begin
-            disp_RGB = valid_RGB;
-        end else disp_RGB = 12'd0;
-    end
+    //图片生成
+    RGB_gen u (
+        .vga_clk(vga_clk),
+        .hcount(hcount),
+        .vcount(vcount),
+        .blk_x(blk_x),
+        .blk_y(blk_y),
+        .disp_RGB(disp_RGB)
+    );
 
 
     // //竖彩条信号显示

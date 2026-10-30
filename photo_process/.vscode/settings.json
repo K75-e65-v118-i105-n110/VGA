@@ -1,0 +1,10 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}\\.venv\\Lib\\site-packages"
+    ],
+    "terminal.integrated.env.windows": {
+        "PYTHONHOME": null,
+        "PYTHONPATH": null
+    }
+}

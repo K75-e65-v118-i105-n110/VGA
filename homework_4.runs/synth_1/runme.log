@@ -15,9 +15,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1344 
+INFO: Helper process launched with PID 8100 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 803.801 ; gain = 178.133
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 803.742 ; gain = 178.383
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'VGA_diaplay' [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/VGA_diaplay.v:23]
 	Parameter hsync_end bound to: 10'b0001011111 
@@ -28,14 +28,27 @@ INFO: [Synth 8-6157] synthesizing module 'VGA_diaplay' [D:/FPGA/homework_4/homew
 	Parameter vdat_begin bound to: 10'b0000100010 
 	Parameter vdat_end bound to: 10'b1000000010 
 	Parameter v_line bound to: 10'b1000001100 
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-38760-LAPTOP-62RNTE6R/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (1#1) [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-38760-LAPTOP-62RNTE6R/realtime/blk_mem_gen_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-38760-LAPTOP-62RNTE6R/realtime/blk_mem_gen_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (2#1) [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-38760-LAPTOP-62RNTE6R/realtime/blk_mem_gen_1_stub.v:6]
-WARNING: [Synth 8-689] width (19) of port connection 'addra' does not match port width (4) of module 'blk_mem_gen_1' [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/VGA_diaplay.v:103]
-INFO: [Synth 8-6155] done synthesizing module 'VGA_diaplay' (3#1) [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/VGA_diaplay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'block_move' [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/block_move.v:23]
+	Parameter SPEED bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'block_move' (1#1) [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/block_move.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RGB_gen' [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/RGB_gen.v:23]
+	Parameter hdat_begin bound to: 10'b0010001111 
+	Parameter hdat_end bound to: 10'b1100001111 
+	Parameter vdat_begin bound to: 10'b0000100010 
+	Parameter vdat_end bound to: 10'b1000000010 
+	Parameter blk_width bound to: 10'b0000101000 
+	Parameter blk_height bound to: 10'b0000101000 
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-5584-LAPTOP-62RNTE6R/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (2#1) [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-5584-LAPTOP-62RNTE6R/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_2' [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-5584-LAPTOP-62RNTE6R/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_2' (3#1) [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-5584-LAPTOP-62RNTE6R/realtime/blk_mem_gen_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_1' [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-5584-LAPTOP-62RNTE6R/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_1' (4#1) [D:/FPGA/homework_4/homework_4.runs/synth_1/.Xil/Vivado-5584-LAPTOP-62RNTE6R/realtime/blk_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RGB_gen' (5#1) [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/RGB_gen.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'disp_RGB' does not match port width (13) of module 'RGB_gen' [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/VGA_diaplay.v:95]
+INFO: [Synth 8-6155] done synthesizing module 'VGA_diaplay' (6#1) [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/VGA_diaplay.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 869.973 ; gain = 244.305
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 870.133 ; gain = 244.773
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -48,51 +61,53 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 869.973 ; gain = 244.305
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 870.133 ; gain = 244.773
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 869.973 ; gain = 244.305
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 870.133 ; gain = 244.773
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'image_rom'
-Finished Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'image_rom'
-Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'image_color_rom'
-Finished Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'image_color_rom'
+Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u/back_ROM'
+Finished Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u/back_ROM'
+Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'u/image_color_rom'
+Finished Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'u/image_color_rom'
+Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'u/block_ROM'
+Finished Parsing XDC File [d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'u/block_ROM'
 Parsing XDC File [D:/FPGA/homework_4/homework_4.srcs/constrs_1/new/homework_4.xdc]
 Finished Parsing XDC File [D:/FPGA/homework_4/homework_4.srcs/constrs_1/new/homework_4.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA/homework_4/homework_4.srcs/constrs_1/new/homework_4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/VGA_diaplay_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/VGA_diaplay_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 970.602 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 970.488 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 970.602 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 970.488 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 970.602 ; gain = 344.934
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 970.488 ; gain = 345.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 970.602 ; gain = 344.934
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 970.488 ; gain = 345.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for image_rom. (constraint file  auto generated constraint, line ).
-Applied set_property DONT_TOUCH = true for image_color_rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u/back_ROM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u/image_color_rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u/block_ROM. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 970.602 ; gain = 344.934
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 970.488 ; gain = 345.129
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/FPGA/homework_4/homework_4.srcs/sources_1/new/VGA_diaplay.v:81]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 970.602 ; gain = 344.934
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 970.488 ; gain = 345.129
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -106,15 +121,17 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     19 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 3     
+	   3 Input      7 Bit       Adders := 1     
 	   2 Input      1 Bit       Adders := 1     
 +---Registers : 
-	               10 Bit    Registers := 2     
-	                1 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input     19 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -125,16 +142,28 @@ Hierarchical RTL Component report
 Module VGA_diaplay 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     19 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      1 Bit       Adders := 1     
 +---Registers : 
 	               10 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
+Module block_move 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module RGB_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 4     
+	   3 Input      7 Bit       Adders := 1     
 +---Muxes : 
-	   2 Input     19 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -151,24 +180,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-DSP Report: Generating DSP pic_addr0, operation Mode is: A*(B:0x280).
-DSP Report: operator pic_addr0 is absorbed into DSP pic_addr0.
-DSP Report: Generating DSP pic_addr, operation Mode is: PCIN+A:B+C.
-DSP Report: operator pic_addr is absorbed into DSP pic_addr.
+DSP Report: Generating DSP u/pic_addr0, operation Mode is: A*(B:0x280).
+DSP Report: operator u/pic_addr0 is absorbed into DSP u/pic_addr0.
+DSP Report: Generating DSP u/pic_addr, operation Mode is: PCIN+(A:0x0):B2+(C:0xffffffffff70).
+DSP Report: register hcount_reg is absorbed into DSP u/pic_addr.
+DSP Report: operator u/pic_addr is absorbed into DSP u/pic_addr.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 970.602 ; gain = 344.934
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 970.488 ; gain = 345.129
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping  Report (see note below)
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|VGA_diaplay | A*(B:0x280) | 19     | 10     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|VGA_diaplay | PCIN+A:B+C  | 1      | 18     | 10     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping                        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|RGB_gen     | A*(B:0x280)                        | 19     | 10     | -      | -      | 29     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|VGA_diaplay | PCIN+(A:0x0):B2+(C:0xffffffffff70) | 30     | 10     | 9      | -      | -1     | 0    | 1    | 0    | -    | -     | 0    | 0    | 
++------------+------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -184,13 +214,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1012.449 ; gain = 386.781
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1016.449 ; gain = 391.090
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1012.523 ; gain = 386.855
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1016.676 ; gain = 391.316
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -202,7 +232,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1032.188 ; gain = 406.520
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1036.613 ; gain = 411.254
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -226,7 +256,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.992 ; gain = 411.324
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.391 ; gain = 417.031
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -239,7 +269,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.992 ; gain = 411.324
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.391 ; gain = 417.031
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -251,25 +281,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.992 ; gain = 411.324
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.391 ; gain = 417.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.992 ; gain = 411.324
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.391 ; gain = 417.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.992 ; gain = 411.324
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.391 ; gain = 417.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.992 ; gain = 411.324
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.391 ; gain = 417.031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -280,7 +310,8 @@ Report BlackBoxes:
 |      |BlackBox name |Instances |
 +------+--------------+----------+
 |1     |blk_mem_gen_0 |         1|
-|2     |blk_mem_gen_1 |         1|
+|2     |blk_mem_gen_2 |         1|
+|3     |blk_mem_gen_1 |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
@@ -289,48 +320,52 @@ Report Cell Usage:
 +------+--------------+------+
 |1     |blk_mem_gen_0 |     1|
 |2     |blk_mem_gen_1 |     1|
-|3     |BUFG          |     1|
-|4     |DSP48E1       |     1|
-|5     |DSP48E1_1     |     1|
-|6     |LUT1          |     2|
-|7     |LUT2          |     4|
-|8     |LUT3          |     5|
-|9     |LUT4          |    27|
-|10    |LUT5          |    13|
-|11    |LUT6          |    21|
-|12    |FDRE          |    22|
-|13    |IBUF          |     1|
-|14    |OBUF          |    14|
+|3     |blk_mem_gen_2 |     1|
+|4     |BUFG          |     1|
+|5     |CARRY4        |    13|
+|6     |DSP48E1       |     1|
+|7     |DSP48E1_1     |     1|
+|8     |LUT1          |     6|
+|9     |LUT2          |    16|
+|10    |LUT3          |    14|
+|11    |LUT4          |    32|
+|12    |LUT5          |    40|
+|13    |LUT6          |    46|
+|14    |FDRE          |    34|
+|15    |IBUF          |     1|
+|16    |OBUF          |    14|
 +------+--------------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |   128|
-+------+---------+-------+------+
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |   239|
+|2     |  move   |block_move |   103|
+|3     |  u      |RGB_gen    |    84|
++------+---------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.992 ; gain = 411.324
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.391 ; gain = 417.031
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 1036.992 ; gain = 310.695
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 1036.992 ; gain = 411.324
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1042.391 ; gain = 316.676
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1042.391 ; gain = 417.031
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1036.992 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1057.488 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-19 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+24 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 1036.992 ; gain = 650.129
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1036.992 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1057.488 ; gain = 671.492
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1057.488 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/FPGA/homework_4/homework_4.runs/synth_1/VGA_diaplay.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file VGA_diaplay_utilization_synth.rpt -pb VGA_diaplay_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 16:12:17 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 28 20:56:45 2026...

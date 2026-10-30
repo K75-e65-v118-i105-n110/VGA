@@ -34,12 +34,23 @@ set_property ip_output_repo d:/FPGA/homework_4/homework_4.cache/ip [current_proj
 set_property ip_cache_permissions {read write} [current_project]
 add_files d:/FPGA/photo_process/photo_index4.coe
 add_files d:/FPGA/photo_process/photo_palette_rgb444.coe
-read_verilog -library xil_defaultlib D:/FPGA/homework_4/homework_4.srcs/sources_1/new/VGA_diaplay.v
+add_files d:/FPGA/homework_4/photo_process/photo_index4.coe
+add_files d:/FPGA/homework_4/photo_process/photo_palette_rgb444.coe
+add_files d:/FPGA/photo_process/black_10x10_rgb444.coe
+add_files d:/FPGA/photo_process/black_10x10_index4.coe
+read_verilog -library xil_defaultlib {
+  D:/FPGA/homework_4/homework_4.srcs/sources_1/new/RGB_gen.v
+  D:/FPGA/homework_4/homework_4.srcs/sources_1/new/block_move.v
+  D:/FPGA/homework_4/homework_4.srcs/sources_1/new/VGA_diaplay.v
+}
 read_ip -quiet d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 read_ip -quiet d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
 set_property used_in_implementation false [get_files -all d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+
+read_ip -quiet d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
+set_property used_in_implementation false [get_files -all d:/FPGA/homework_4/homework_4.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

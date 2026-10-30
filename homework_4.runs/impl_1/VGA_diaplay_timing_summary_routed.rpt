@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Oct 28 16:13:45 2026
+| Date         : Wed Oct 28 20:57:41 2026
 | Host         : LAPTOP-62RNTE6R running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file VGA_diaplay_timing_summary_routed.rpt -pb VGA_diaplay_timing_summary_routed.pb -rpx VGA_diaplay_timing_summary_routed.rpx -warn_on_violation
 | Design       : VGA_diaplay
@@ -53,9 +53,9 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 2 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+ There are 14 register/latch pins with no clock driven by root clock pin: clk (HIGH)
 
- There are 22 register/latch pins with no clock driven by root clock pin: vga_clk_reg/Q (HIGH)
+ There are 70 register/latch pins with no clock driven by root clock pin: vga_clk_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -70,7 +70,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 56 pins that are not constrained for maximum delay. (HIGH)
+ There are 762 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
