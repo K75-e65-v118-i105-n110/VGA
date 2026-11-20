@@ -1,0 +1,70 @@
+# ===== Vivado / Xilinx 生成目录 =====
+# 综合、实现、仿真、IP 输出的中间目录，都可以由工程重新生成
+homework_4.cache/
+homework_4.hw/
+homework_4.runs/
+homework_4.sim/
+homework_4.ip_user_files/
+xsim.dir/
+.Xil/
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.ip_user_files/
+
+# ===== 运行日志与报告 =====
+*.jou
+*.log
+*.pb
+*.wdb
+*.wcfg
+*.rpt
+*.str
+vivado*.jou
+vivado*.log
+webtalk*.jou
+webtalk*.log
+usage_statistics_webtalk.*
+
+# ===== 综合 / 实现的中转产物 =====
+*.dcp
+*.ltx
+*.bit
+*.bin
+*.mcs
+*.prm
+*.vdi
+*.vds
+*.vpd
+*.sdf
+*.sav
+*.bmm
+*.twr
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+
+# ===== 编辑器 / 操作系统 =====
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 说明 =====
+# 以上规则只对尚未被 Git 跟踪的文件生效。
+# 仓库里已经提交过的构建产物（如 homework_4.runs/、homework_4.sim/、
+# homework_4.cache/、homework_4.ip_user_files/、photo_process/.venv/）
+# 需要先移出索引才会从版本库中消失，例如：
+#     git rm -r --cached homework_4.runs homework_4.sim photo_process/.venv
+# 该操作只改索引，不会删除本地文件。
