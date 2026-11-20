@@ -1,7 +1,0 @@
-Running: xsim.dir/food_point_tb_behav/xsimk.exe -simmode gui -wdb food_point_tb_behav.wdb -simrunnum 0 -socket 59460
-Design successfully loaded
-Design Loading Memory Usage: 8800 KB (Peak: 8800 KB)
-Design Loading CPU Usage: 31 ms
-Simulation completed
-Simulation Memory Usage: 10736 KB (Peak: 10736 KB)
-Simulation CPU Usage: 31 ms
