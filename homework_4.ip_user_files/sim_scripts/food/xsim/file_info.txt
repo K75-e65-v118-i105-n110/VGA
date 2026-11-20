@@ -1,0 +1,2 @@
+food.v,verilog,xil_defaultlib,../../../../homework_4.srcs/sources_1/ip/food/sim/food.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

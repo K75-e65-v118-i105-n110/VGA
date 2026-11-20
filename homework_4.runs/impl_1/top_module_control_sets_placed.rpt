@@ -1,0 +1,98 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Nov 18 22:35:08 2026
+| Host         : LAPTOP-62RNTE6R running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
+| Design       : top_module
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              31 |           14 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             450 |          223 |
+| Yes          | No                    | No                     |               3 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             165 |           64 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------------+---------------------------------------------------+------------------+----------------+
+|  Clock Signal  |               Enable Signal               |                  Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++----------------+-------------------------------------------+---------------------------------------------------+------------------+----------------+
+|  vga_clk_BUFG  | scan/hcount_ov                            |                                                   |                3 |              3 |
+|  clk_IBUF_BUFG |                                           | game_state/SR[0]                                  |                2 |              5 |
+|  clk_IBUF_BUFG |                                           | u_uart_ctrl/u_uart_rx/data_valid_reg_0            |                2 |              5 |
+|  clk_IBUF_BUFG | RGB_u/u_point_food_rgb/breath_phase       | rule/food_gen_u/food_type_reg_2[0]                |                2 |              5 |
+|  clk_IBUF_BUFG | u_uart_ctrl/u_uart_rx/data_out[7]_i_1_n_0 | rst_IBUF                                          |                3 |              8 |
+|  clk_IBUF_BUFG | rule/food_gen_u/food_x[4]_i_1_n_0         | rst_IBUF                                          |                4 |             10 |
+|  clk_IBUF_BUFG | RGB_u/u_point_rgb/u_point_count/p_1_in    | game_state/SR[0]                                  |                3 |             10 |
+|  clk_IBUF_BUFG | tick/game_tick_reg_1                      | game_state/FSM_sequential_state_reg[1]_1          |                6 |             10 |
+|  vga_clk_BUFG  | scan/hcount_ov                            | scan/vcount[9]_i_1_n_0                            |                6 |             10 |
+|  clk_IBUF_BUFG |                                           |                                                   |                7 |             14 |
+|  clk_IBUF_BUFG | tick/game_tick_reg_0                      | game_state/FSM_sequential_state_reg[1]_1          |               12 |             16 |
+|  vga_clk_BUFG  |                                           |                                                   |                7 |             17 |
+|  vga_clk_BUFG  |                                           | scan/hcount_ov                                    |               15 |             17 |
+|  clk_IBUF_BUFG |                                           | rule/food_gen_u/food_type_reg_2[0]                |               14 |             32 |
+|  clk_IBUF_BUFG |                                           | tick/cnt[0]_i_1_n_0                               |                8 |             32 |
+|  clk_IBUF_BUFG | rule/u_food_point/active_reg_n_0          | rule/u_food_point/score_interval_count[0]_i_1_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG | rule/u_food_point/active_reg_n_0          | rule/u_food_point/elapsed_count[0]_i_1_n_0        |                8 |             32 |
+|  clk_IBUF_BUFG | u_uart_ctrl/u_uart_rx/clk_cnt             | rst_IBUF                                          |               12 |             32 |
+|  clk_IBUF_BUFG |                                           | rst_IBUF                                          |               28 |             45 |
+|  clk_IBUF_BUFG |                                           | game_state/FSM_sequential_state_reg[1]_1          |              154 |            314 |
++----------------+-------------------------------------------+---------------------------------------------------+------------------+----------------+
+
+

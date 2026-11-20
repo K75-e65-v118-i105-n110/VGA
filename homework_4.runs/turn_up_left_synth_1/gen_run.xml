@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="turn_up_left_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1794149720">
+  <File Type="PA-TCL" Name="turn_up_left.tcl"/>
+  <File Type="REPORTS-TCL" Name="turn_up_left_reports.tcl"/>
+  <File Type="RDS-RDS" Name="turn_up_left.vds"/>
+  <File Type="RDS-UTIL" Name="turn_up_left_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="turn_up_left_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="turn_up_left.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/turn_up_left">
+    <File Path="$PSRCDIR/sources_1/ip/turn_up_left_1/turn_up_left.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="turn_up_left"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/ip/turn_up_left_1/turn_up_left.xci"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/turn_up_left">
+    <File Path="$PSRCDIR/sources_1/ip/turn_up_left_1/turn_up_left.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="turn_up_left"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/ip/turn_up_left_1/turn_up_left.xci"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

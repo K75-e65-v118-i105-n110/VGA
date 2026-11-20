@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="body_up_down_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/body_up_down_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="head_down_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/head_down_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="head_left_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/head_left_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="head_right_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/head_right_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="head_up_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/head_up_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tail_down_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/tail_down_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tail_left_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/tail_left_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tail_right_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/tail_right_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="tail_up_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/tail_up_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="turn_down_right_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/turn_down_right_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="turn_left_down_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/turn_left_down_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="turn_right_up_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/turn_right_up_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="turn_up_left_synth_1" LaunchDir="D:/FPGA/homework_4/homework_4.runs/turn_up_left_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

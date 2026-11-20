@@ -1,73 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1793192212">
-  <File Type="BITSTR-BMM" Name="VGA_diaplay_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="VGA_diaplay_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="VGA_diaplay_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="VGA_diaplay_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="VGA_diaplay.tcl"/>
-  <File Type="OPT-TIMING" Name="VGA_diaplay_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="VGA_diaplay_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="VGA_diaplay_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="VGA_diaplay_reports.tcl"/>
-  <File Type="OPT-DRC" Name="VGA_diaplay_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="VGA_diaplay.hwdef"/>
-  <File Type="PWROPT-DCP" Name="VGA_diaplay_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="VGA_diaplay_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="VGA_diaplay_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="VGA_diaplay_placed.dcp"/>
-  <File Type="PLACE-IO" Name="VGA_diaplay_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="VGA_diaplay_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="VGA_diaplay_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="VGA_diaplay_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="VGA_diaplay_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="VGA_diaplay_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="VGA_diaplay_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="VGA_diaplay.bgn"/>
-  <File Type="PLACE-TIMING" Name="VGA_diaplay_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="VGA_diaplay_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="VGA_diaplay.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="VGA_diaplay_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="VGA_diaplay_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="VGA_diaplay_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="VGA_diaplay.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="VGA_diaplay_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="VGA_diaplay_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="VGA_diaplay_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="VGA_diaplay_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="VGA_diaplay_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="VGA_diaplay_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="VGA_diaplay.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="VGA_diaplay_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="VGA_diaplay.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="VGA_diaplay_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="VGA_diaplay_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="VGA_diaplay.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="VGA_diaplay_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="VGA_diaplay_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="VGA_diaplay_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="VGA_diaplay_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="VGA_diaplay_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="VGA_diaplay_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="VGA_diaplay_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="VGA_diaplay_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="VGA_diaplay_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="VGA_diaplay_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="VGA_diaplay_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="VGA_diaplay_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="VGA_diaplay_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="VGA_diaplay_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="VGA_diaplay_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="VGA_diaplay_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="VGA_diaplay_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="VGA_diaplay_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="VGA_diaplay_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="VGA_diaplay.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="VGA_diaplay_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="VGA_diaplay.rbt"/>
-  <File Type="BITSTR-NKY" Name="VGA_diaplay.nky"/>
-  <File Type="BG-DRC" Name="VGA_diaplay.drc"/>
-  <File Type="RDI-RDI" Name="VGA_diaplay.vdi"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1795012455">
+  <File Type="BITSTR-BMM" Name="top_module_bd.bmm"/>
+  <File Type="ROUTE-PWR" Name="top_module_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="top_module.tcl"/>
+  <File Type="OPT-DCP" Name="top_module_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_module_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="top_module_reports.tcl"/>
+  <File Type="OPT-DRC" Name="top_module_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="top_module.hwdef"/>
+  <File Type="PWROPT-DCP" Name="top_module_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="top_module_placed.dcp"/>
+  <File Type="PLACE-IO" Name="top_module_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="top_module_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_module_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="top_module_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_module_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="top_module.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_module_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="top_module.bin"/>
+  <File Type="PHYSOPT-DCP" Name="top_module_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="top_module.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_module_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="top_module_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_module_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="top_module_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_module_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="top_module.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_module_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="top_module.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_module_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_module_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="top_module.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_module_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_module_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="top_module_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_module_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_module_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_module_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_module_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="top_module.vdi"/>
+  <File Type="ROUTE-CLK" Name="top_module_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="top_module_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="top_module_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="top_module_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_module_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_module_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="top_module.bit"/>
+  <File Type="BITSTR-RBT" Name="top_module.rbt"/>
+  <File Type="BITSTR-NKY" Name="top_module.nky"/>
+  <File Type="BG-DRC" Name="top_module.drc"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -78,67 +59,298 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/block_move.v">
+    <File Path="$PSRCDIR/sources_1/new/VGA_display.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/VGA_diaplay.v">
+    <File Path="$PSRCDIR/sources_1/new/bound_down_rgb.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../photo_process/photo_index4.coe">
+    <File Path="$PSRCDIR/sources_1/new/food_gen.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../photo_process/photo_palette_rgb444.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/photo_process/photo_index4.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/photo_process/photo_palette_rgb444.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../photo_process/black_10x10_rgb444.coe">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/back_RGB.v">
-      <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/block_RGB.v">
+    <File Path="$PSRCDIR/sources_1/new/food_point.v">
       <FileInfo>
-        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../photo_process/black_10x10_index4.coe">
+    <File Path="$PSRCDIR/sources_1/new/game_rule.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/game_tick.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/input_ctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/point_count.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/point_food_rgb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/point_rgb.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/start_end.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_decode.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_dirctrl.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_rx.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/top_module.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/body_left_right.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/body_up_down.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/head_down.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/head_left.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/head_right.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/head_up.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/tail_down.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/tail_left.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/tail_right.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/tail_up.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/turn_down_right.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/turn_left_down.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/turn_right_up.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/turn_up_left.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/game_over.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/press_space_to_start.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/press_space_to_restart.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_0.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_1.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_2.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_3.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_4.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_5.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_6.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_7.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_8.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/digit_9.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/wall.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/food.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/food_point_big.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/food_point_medium.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/photo_process/food_point_small.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -146,7 +358,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="VGA_diaplay"/>
+      <Option Name="TopModule" Val="top_module"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
@@ -181,7 +393,36 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="tail_down"/>
+  <BlockFileSet Type="BlockSrcs" Name="body_left_right"/>
+  <BlockFileSet Type="BlockSrcs" Name="head_down"/>
+  <BlockFileSet Type="BlockSrcs" Name="body_up_down"/>
+  <BlockFileSet Type="BlockSrcs" Name="tail_left"/>
+  <BlockFileSet Type="BlockSrcs" Name="press_start"/>
+  <BlockFileSet Type="BlockSrcs" Name="head_left"/>
+  <BlockFileSet Type="BlockSrcs" Name="tail_right"/>
+  <BlockFileSet Type="BlockSrcs" Name="head_right"/>
+  <BlockFileSet Type="BlockSrcs" Name="head_up"/>
+  <BlockFileSet Type="BlockSrcs" Name="wall"/>
+  <BlockFileSet Type="BlockSrcs" Name="tail_up"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="game_over"/>
+  <BlockFileSet Type="BlockSrcs" Name="turn_down_right"/>
+  <BlockFileSet Type="BlockSrcs" Name="turn_left_down"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="turn_right_up"/>
+  <BlockFileSet Type="BlockSrcs" Name="turn_up_left"/>
+  <BlockFileSet Type="BlockSrcs" Name="press_restart"/>
+  <BlockFileSet Type="BlockSrcs" Name="food"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="food_point_medium"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_8"/>
+  <BlockFileSet Type="BlockSrcs" Name="digit_9"/>
+  <BlockFileSet Type="BlockSrcs" Name="food_point_big"/>
+  <BlockFileSet Type="BlockSrcs" Name="food_point_small"/>
 </GenRun>

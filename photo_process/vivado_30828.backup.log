@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 17 18:03:31 2026
+# Process ID: 30828
+# Current directory: D:/FPGA/homework_4/photo_process
+# Command line: vivado.exe -mode batch -source D:\FPGA\homework_4\photo_process\.create_digit_roms.tcl
+# Log file: D:/FPGA/homework_4/photo_process/vivado.log
+# Journal file: D:/FPGA/homework_4/photo_process\vivado.jou
+#-----------------------------------------------------------
+source {D:\FPGA\homework_4\photo_process\.create_digit_roms.tcl}
+# set project_dir [file dirname [file dirname [file normalize [info script]]]]
+# set project_file [file join $project_dir homework_4.xpr]
+# set coe_dir [file join $project_dir photo_process]
+# set ip_dir [file join $project_dir homework_4.srcs sources_1 ip]
+# open_project $project_file
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+# foreach digit {0 1 2 3 4 5 6 7 8 9} {
+#     set module_name "digit_$digit"
+#     set coe_file [file join $coe_dir "${module_name}.coe"]
+#     set xci_file [file join $ip_dir $module_name "${module_name}.xci"]
+#     if {![file isfile $coe_file]} { error "Missing COE file: $coe_file" }
+#     set ip [get_ips -quiet $module_name]
+#     if {[llength $ip] == 0} {
+#         if {[file isfile $xci_file]} {
+#             add_files -fileset sources_1 -norecurse $xci_file
+#         } else {
+#             create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name $module_name -dir $ip_dir
+#             set ip [get_ips $module_name]
+#             set_property -dict [list \
+#                 CONFIG.Memory_Type {Single_Port_ROM} \
+#                 CONFIG.Write_Width_A {1} \
+#                 CONFIG.Write_Depth_A {400} \
+#                 CONFIG.Read_Width_A {1} \
+#                 CONFIG.Enable_A {Use_ENA_Pin} \
+#                 CONFIG.Load_Init_File {true} \
+#                 CONFIG.Coe_File $coe_file \
+#                 CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
+#             ] $ip
+#             generate_target all $ip
+#         }
+#         set ip [get_ips $module_name]
+#         if {[llength $ip] == 0} { error "Failed to register IP $module_name" }
+#     }
+#     if {[get_property CONFIG.Write_Width_A $ip] != 1 || [get_property CONFIG.Read_Width_A $ip] != 1 || [get_property CONFIG.Write_Depth_A $ip] != 400} {
+#         error "IP $module_name has incorrect width or depth"
+#     }
+#     if {[llength [get_filesets -quiet $module_name]] == 0} {
+#         create_fileset -blockset -define_from $module_name $module_name
+#     }
+#     if {![file isfile $xci_file]} { error "Generated IP file not found: $xci_file" }
+#     puts "ROM_OK module=$module_name width=[get_property CONFIG.Read_Width_A $ip] depth=[get_property CONFIG.Write_Depth_A $ip] xci=$xci_file"
+# }
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_0/digit_0.xci' from fileset 'sources_1' to fileset 'digit_0'.
+ROM_OK module=digit_0 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_0/digit_0.xci
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_1/digit_1.xci' from fileset 'sources_1' to fileset 'digit_1'.
+ROM_OK module=digit_1 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_1/digit_1.xci
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_2/digit_2.xci' from fileset 'sources_1' to fileset 'digit_2'.
+ROM_OK module=digit_2 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_2/digit_2.xci
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_3/digit_3.xci' from fileset 'sources_1' to fileset 'digit_3'.
+ROM_OK module=digit_3 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_3/digit_3.xci
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_4/digit_4.xci' from fileset 'sources_1' to fileset 'digit_4'.
+ROM_OK module=digit_4 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_4/digit_4.xci
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_5/digit_5.xci' from fileset 'sources_1' to fileset 'digit_5'.
+ROM_OK module=digit_5 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_5/digit_5.xci
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_6/digit_6.xci' from fileset 'sources_1' to fileset 'digit_6'.
+ROM_OK module=digit_6 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_6/digit_6.xci
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_7/digit_7.xci' from fileset 'sources_1' to fileset 'digit_7'.
+ROM_OK module=digit_7 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_7/digit_7.xci
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_8/digit_8.xci' from fileset 'sources_1' to fileset 'digit_8'.
+ROM_OK module=digit_8 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_8/digit_8.xci
+INFO: [Vivado 12-2924] Moving file 'D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_9/digit_9.xci' from fileset 'sources_1' to fileset 'digit_9'.
+ROM_OK module=digit_9 width=1 depth=400 xci=D:/FPGA/homework_4/homework_4.srcs/sources_1/ip/digit_9/digit_9.xci
+# update_compile_order -fileset sources_1
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 18:03:40 2026...

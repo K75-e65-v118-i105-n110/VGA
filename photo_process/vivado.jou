@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov 17 18:04:10 2026
+# Process ID: 4768
+# Current directory: D:/FPGA/homework_4/photo_process
+# Command line: vivado.exe -mode batch -source D:\FPGA\homework_4\photo_process\.verify_digit_roms.tcl
+# Log file: D:/FPGA/homework_4/photo_process/vivado.log
+# Journal file: D:/FPGA/homework_4/photo_process\vivado.jou
+#-----------------------------------------------------------
+source {D:\FPGA\homework_4\photo_process\.verify_digit_roms.tcl}
